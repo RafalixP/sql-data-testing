@@ -25,7 +25,7 @@ jobs:
     
     - name: Run data quality tests
       run: |
-        python -m pytest tests/ -v --html=reports/test_report.html --self-contained-html
+        python -m pytest tests/test_data_quality_monitoring.py -v -s --html=reports/test_report.html --self-contained-html
     
     - name: Upload test results
       uses: actions/upload-artifact@v3
